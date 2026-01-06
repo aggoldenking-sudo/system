@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistema Animalitos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOGIN -->
+  <div id="loginPanel" class="login-panel">
+    <h2>Iniciar Sesión</h2>
+    <input type="text" id="usuario" placeholder="Usuario">
+    <input type="password" id="password" placeholder="Contraseña">
+    <button id="loginBtn">Entrar</button>
+    <p id="loginError" style="color:red; display:none;">Usuario o contraseña incorrectos</p>
+  </div>
+
+  <!-- PANEL PRINCIPAL -->
+  <div id="mainContainer" class="container" style="display:none;">
+
+    <div class="header">
+      <h1>Centro de Apuestas</h1>
+      <button id="logoutBtn">Salir</button>
+    </div>
+
+    <div class="panel-left">
+      <h2>Loterías</h2>
+      <div id="loterias"></div>
+
+      <h2>Sorteos</h2>
+      <div id="sorteos"></div>
+    </div>
+
+    <div class="panel-right">
+      <h2>Animales</h2>
+      <div id="animales"></div>
+
+      <h2>Seleccionados</h2>
+      <div id="seleccionados"></div>
+
+      <div class="input-monto">
+        <label for="monto">Monto:</label>
+        <input type="number" id="monto" min="0" value="0">
+        <button id="agregarBtn">Agregar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
